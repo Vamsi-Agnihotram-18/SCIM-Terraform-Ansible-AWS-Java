@@ -1,0 +1,12 @@
+[master]
+master ansible_host=34.234.207.23
+
+[workers]
+worker1 ansible_host=3.236.36.148
+worker2 ansible_host=18.206.90.101 
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+ansible_ssh_private_key_file=/home/diego/devops.pem
+ansible_user=ubuntu
